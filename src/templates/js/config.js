@@ -1,12 +1,12 @@
 var config = {
     testnet: false, // this is adjusted page.h if needed. dont need to change manually
     stagenet: false, // this is adjusted page.h if needed. dont need to change manually
-    coinUnitPlaces: 2,
+    coinUnitPlaces: 12,
     txMinConfirms: 18,         // corresponds to CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE in Monero
     txCoinbaseMinConfirms: 60, // corresponds to CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW in Monero
-    coinSymbol: 'ETNX',
-    openAliasPrefix: "etnx",
-    coinName: 'Electronero',
+    coinSymbol: 'GLDX',
+    openAliasPrefix: "gldx",
+    coinName: 'Goldnero',
     coinUriPrefix: 'electronero:',
     addressPrefix: 18018,
     integratedAddressPrefix: 18019,
