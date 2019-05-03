@@ -190,7 +190,7 @@ struct tx_details
             mixin_str        = std::to_string(mixin_no);
             fee_str          = fmt::format("{:0.6f}", xmr_amount);
             fee_short_str    = fmt::format("{:0.3f}", xmr_amount);
-            payed_for_kB_str = fmt::format("{:0.3f}", payed_for_kB);
+            payed_for_kB_str = fmt::format("{:0.12f}", payed_for_kB);
         }
 
 
@@ -203,8 +203,8 @@ struct tx_details
                 {"payed_for_kB"      , payed_for_kB_str},
                 {"sum_inputs"        , xmr_amount_to_str(xmr_inputs , "{:0.6f}")},
                 {"sum_outputs"       , xmr_amount_to_str(xmr_outputs, "{:0.6f}")},
-                {"sum_inputs_short"  , xmr_amount_to_str(xmr_inputs , "{:0.3f}")},
-                {"sum_outputs_short" , xmr_amount_to_str(xmr_outputs, "{:0.3f}")},
+                {"sum_inputs_short"  , xmr_amount_to_str(xmr_inputs , "{:0.12f}")},
+                {"sum_outputs_short" , xmr_amount_to_str(xmr_outputs, "{:0.12f}")},
                 {"no_inputs"         , static_cast<uint64_t>(input_key_imgs.size())},
                 {"no_outputs"        , static_cast<uint64_t>(output_pub_keys.size())},
                 {"no_nonrct_inputs"  , num_nonrct_inputs},
@@ -220,7 +220,7 @@ struct tx_details
                 {"payment_id8"       , pod_to_hex(payment_id8)},
                 {"unlock_time"       , unlock_time},
                 {"tx_size"           , fmt::format("{:0.4f}", tx_size)},
-                {"tx_size_short"     , fmt::format("{:0.2f}", tx_size)},
+                {"tx_size_short"     , fmt::format("{:0.12f}", tx_size)},
                 {"has_add_pks"       , !additional_pks.empty()}
         };
 
@@ -585,7 +585,7 @@ public:
             // get block size in kB
             double blk_size = static_cast<double>(core_storage->get_db().get_block_size(i))/1024.0;
 
-            string blk_size_str = fmt::format("{:0.2f}", blk_size);
+            string blk_size_str = fmt::format("{:0.12f}", blk_size);
 
             blk_sizes.push_back(blk_size);
 
@@ -1000,7 +1000,7 @@ public:
         }
 
         context.insert({"mempool_size_kB",
-                        fmt::format("{:0.2f}",
+                        fmt::format("{:0.12f}",
                                     static_cast<double>(mempool_size_bytes)/1024.0)});
 
         if (add_header_and_footer)
@@ -5880,7 +5880,7 @@ private:
             context.emplace("timescales", mixins_timescales.first);
 
 
-            context["timescales_scale"] = fmt::format("{:0.2f}",
+            context["timescales_scale"] = fmt::format("{:0.12f}",
                                                       mixins_timescales.second / 3600.0 / 24.0); // in days
 
             context["tx_prefix_hash"] = pod_to_hex(get_transaction_prefix_hash(tx));
