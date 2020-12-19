@@ -1,0 +1,14 @@
+/root/Crystaleum-Blockchain-Explorer/v2/CMakeFiles/edit_cache.dir
+/root/Crystaleum-Blockchain-Explorer/v2/CMakeFiles/rebuild_cache.dir
+/root/Crystaleum-Blockchain-Explorer/v2/CMakeFiles/crfiblocks.dir
+/root/Crystaleum-Blockchain-Explorer/v2/ext/CMakeFiles/edit_cache.dir
+/root/Crystaleum-Blockchain-Explorer/v2/ext/CMakeFiles/rebuild_cache.dir
+/root/Crystaleum-Blockchain-Explorer/v2/ext/CMakeFiles/myext.dir
+/root/Crystaleum-Blockchain-Explorer/v2/ext/mstch/CMakeFiles/edit_cache.dir
+/root/Crystaleum-Blockchain-Explorer/v2/ext/mstch/CMakeFiles/rebuild_cache.dir
+/root/Crystaleum-Blockchain-Explorer/v2/ext/mstch/src/CMakeFiles/edit_cache.dir
+/root/Crystaleum-Blockchain-Explorer/v2/ext/mstch/src/CMakeFiles/rebuild_cache.dir
+/root/Crystaleum-Blockchain-Explorer/v2/ext/mstch/src/CMakeFiles/mstch.dir
+/root/Crystaleum-Blockchain-Explorer/v2/src/CMakeFiles/edit_cache.dir
+/root/Crystaleum-Blockchain-Explorer/v2/src/CMakeFiles/rebuild_cache.dir
+/root/Crystaleum-Blockchain-Explorer/v2/src/CMakeFiles/myxrm.dir

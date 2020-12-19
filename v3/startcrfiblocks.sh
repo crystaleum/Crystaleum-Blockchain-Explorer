@@ -1,0 +1,1 @@
+./crfiblocks --enable-emission-monitor 1 --enable-mixin-details 1 --enable-output-key-checker 1 --enable-autorefresh-option 1 --no-blocks-on-index 100 -d http://127.0.0.1:11012 -b ~/.crystaleum/lmdb -p 8088
